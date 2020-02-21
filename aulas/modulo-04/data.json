@@ -1,0 +1,36 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
+      "name": "André Cristiano",
+      "birth": 175824000000,
+      "gender": "M",
+      "services": "Karatê, Yoga, Musculação"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
+      "name": "Lílian Rocha",
+      "birth": 173491200000,
+      "gender": "F",
+      "services": "Yoga, Hidroginástica"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
+      "name": "Eliana dos Santos",
+      "birth": -503971200000,
+      "gender": "F",
+      "services": "Yoga, Pilates"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
+      "name": "Fabiana",
+      "birth": 952214400000,
+      "gender": "F",
+      "services": "Zumba, Forró"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="card">
+   <table>
+    <thead>
+      <tr>  
+        <th>Instructor</th>
+        <th>Atendimento</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for instructor in instructors %}
+      <tr>
+        <td>{{instructor.name}}</td>
+        <td>{{instructor.services}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+   </table>
+  </div>
+{% endblock %}
