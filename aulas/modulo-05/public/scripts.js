@@ -11,11 +11,31 @@ for (const item of menuItens) {
 // [1, ..., 13,]
 
 let totalPages = 20,
-selectedPage = 15,
-pages = []
+selectedPage = 5,
+pages = [],
+oldPage
 
-for(let currentPage = 0, currentPage <= totalPages; currentPage++){
-    pages.push(currentPage)
+for(let currentPage = 0; currentPage <= totalPages; currentPage++){
+    
+    const pagesAfterSelectedPage = currentPage <= selectedPage + 2;
+    const pagesBeforeSelectedPage = currentPage >= selectedPage - 2;
+    const isFirstOrLastPage = currentPage == 1 || currentPage == totalPages;
+    
+
+    if (isFirstOrLastPage || pagesBeforeSelectedPage && pagesAfterSelectedPage) {
+        
+        if(oldPage && currentPage - oldPage > 2){
+            pages.push('...');
+        }
+
+        if(oldPage && currentPage - oldPage == 2){
+            pages.push(oldPage +1);
+        }
+        
+        pages.push(currentPage);
+
+        oldPage = currentPage;
+    }
 }
 
 console.log(pages);
