@@ -1,0 +1,52 @@
+2020-03-04 09:45:18.118 GMT [3392] LOG:  starting PostgreSQL 12.2, compiled by Visual C++ build 1914, 64-bit
+2020-03-04 09:45:18.125 GMT [3392] LOG:  listening on IPv6 address "::1", port 5432
+2020-03-04 09:45:18.127 GMT [3392] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-03-04 09:45:18.343 GMT [8644] LOG:  database system was shut down at 2020-03-04 09:42:29 GMT
+2020-03-04 09:45:18.403 GMT [3392] LOG:  database system is ready to accept connections
+2020-03-04 09:46:20.344 GMT [11092] LOG:  could not receive data from client: unrecognized winsock error 10053
+2020-03-04 09:46:20.385 GMT [2344] ERROR:  duplicate key value violates unique constraint "pg_database_datname_index"
+2020-03-04 09:46:20.385 GMT [2344] DETAIL:  Key (datname)=(gymmanager) already exists.
+2020-03-04 09:46:20.385 GMT [2344] STATEMENT:  CREATE DATABASE "gymmanager" ENCODING 'UTF8' TEMPLATE template0
+2020-03-04 09:46:20.392 GMT [2344] LOG:  could not send data to client: unrecognized winsock error 10053
+2020-03-04 09:46:20.394 GMT [2344] FATAL:  connection to client lost
+2020-03-04 09:46:22.212 GMT [6848] LOG:  invalid length of startup packet
+2020-03-04 09:46:22.227 GMT [16468] ERROR:  database "gymmanager" already exists
+2020-03-04 09:46:22.227 GMT [16468] STATEMENT:  CREATE DATABASE "gymmanager" ENCODING 'UTF8' TEMPLATE template0
+2020-03-04 09:48:09.771 GMT [18240] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-04 19:03:11.150 GMT [18372] ERROR:  syntax error at or near "RETURN" at character 291
+2020-03-04 19:03:11.150 GMT [18372] STATEMENT:  INSERT INTO instructors (
+	                name,
+	                avatar_url,
+	                gender,
+	                swrvices,
+	                birth,
+	                created_at
+	            ) VALUES ('André', '', 'M', 'Karatê, Yoga, Musculação', '1583348495512', '1583348499999')
+	            RETURN id
+2020-03-04 19:03:51.740 GMT [18372] ERROR:  column "swrvices" of relation "instructors" does not exist at character 117
+2020-03-04 19:03:51.740 GMT [18372] STATEMENT:  INSERT INTO instructors (
+	                name,
+	                avatar_url,
+	                gender,
+	                swrvices,
+	                birth,
+	                created_at
+	            ) VALUES ('André', '', 'M', 'Karatê, Yoga, Musculação', '1583348495512', '1583348499999')
+	            RETURNING id
+2020-03-04 19:04:06.456 GMT [18372] ERROR:  date/time field value out of range: "1583348495512" at character 245
+2020-03-04 19:04:06.456 GMT [18372] HINT:  Perhaps you need a different "datestyle" setting.
+2020-03-04 19:04:06.456 GMT [18372] STATEMENT:  INSERT INTO instructors (
+	                name,
+	                avatar_url,
+	                gender,
+	                services,
+	                birth,
+	                created_at
+	            ) VALUES ('André', '', 'M', 'Karatê, Yoga, Musculação', '1583348495512', '1583348499999')
+	            RETURNING id
+2020-03-05 18:55:40.273 GMT [1248] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-05 19:00:43.622 GMT [7288] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-05 19:03:42.102 GMT [4960] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-05 19:11:51.189 GMT [11868] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-05 19:14:28.540 GMT [21872] LOG:  could not receive data from client: unrecognized winsock error 10054
+2020-03-05 19:45:13.342 GMT [5700] LOG:  could not receive data from client: unrecognized winsock error 10054

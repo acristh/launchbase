@@ -1,0 +1,72 @@
+<div class="item">
+                <div>Avatar Url</div>
+                <div>
+                    <input 
+                        type="url" 
+                        name="avatar_url"
+                        placeholder="http://"
+                        value="{{instructor.avatar_url}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Instrutor</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="name"
+                        placeholder="Nome do Instrutor"
+                        value="{{instructor.name}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Data de nascimento</div>
+                <div>
+                    <input 
+                        type="date" 
+                        name="birth"
+                        value="{{instructor.birth}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Sexo</div>
+                <div>
+                    <span>
+                        <input 
+                            type="radio" 
+                            name="gender" 
+                            value="M" 
+                            {% if instructor.gender == 'M' %}
+                                checked
+                            {% endif %}>Masculino
+                    </span>
+                    <span>
+                        <input 
+                            type="radio" 
+                            name="gender" 
+                            value="F"
+                            {% if instructor.gender == 'F' %}
+                                checked
+                            {% endif %}>Feminino
+                    </span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Area de Atuação</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="services"
+                        placeholder="Serpare os serviços prestados por virgula."
+                        value="{{instructor.services}}"
+                    >
+                </div>
+            </div>
+
+            <button type="submit">Salvar</button>
