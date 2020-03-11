@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="card">
-        <section class="avatar" style="background: url(https://source.unsplash.com/collection/3465564/500x500) no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{instructor.avatar_url}}) no-repeat center center / cover"></section>
         <section class="details">
 
             <form method="POST" action="/instructors?_method=PUT">
@@ -18,6 +18,9 @@
                 <input type="hidden" name="id" value={{instructor.id}}>
                 <button type="submit">Deletar</button>
             </form>
+
+            {% include "delete.njk" %}
+            
         </section>
 
     </div>

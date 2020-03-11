@@ -1,6 +1,6 @@
 const fs = require('fs');
-const data = require('./data.json');
-const date = require('./utils/date');
+const data = require('../data.json');
+const date = require('../utils/date');
 
 exports.index = (req, res) => {
     return res.render('instructors/index', { instructors: data.instructors });
@@ -28,6 +28,10 @@ exports.show = (req, res) => {
 
 
     return res.render('instructors/show', {instructor});
+}
+
+exports.create = (req, res) => {
+    return res.render('instructors/create');
 }
 
 exports.posts = (req, res) => {
@@ -71,7 +75,7 @@ exports.edit = (req, res) => {
 
     const instructor = {
         ...foundInstructor,
-        birth: date.getDate(foundInstructor.birth),
+        birth: date.getDate(foundInstructor.birth).iso,
     }
 
     if (!foundInstructor) {
@@ -97,7 +101,8 @@ exports.put = (req, res) => {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id),
     }
 
     data.instructors[index] = instructor;
@@ -116,9 +121,9 @@ exports.delete = (req, res) => {
         return instructor.id != id;
     });
 
-    data.instructor = filteredInstructors;
+    data.instructors = filteredInstructors;
 
-    fs.writeFile('data.json', JSON.stringify('data', null, 2), err => {
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
         if (err) return  res.send('write erro!')
 
         return res.redirect("/instructors");

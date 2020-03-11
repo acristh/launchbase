@@ -1,36 +1,41 @@
 {
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1553531580-a000ac8df244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Milena Rocha",
+      "email": "mrochadsantos@gmail.com",
+      "birth": 400896000000,
+      "gender": "F",
+      "blood": "O+",
+      "weight": "72",
+      "height": "164"
+    }
+  ],
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
-      "name": "André Cristiano",
-      "birth": 175824000000,
-      "gender": "M",
-      "services": "Karatê, Yoga, Musculação"
+      "avatar_url": "https://images.unsplash.com/photo-1529891858519-f18aa4f6a3b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Lílian Rocha",
+      "birth": 173491200000,
+      "gender": "F",
+      "services": "Karatê, Yoga"
     },
     {
       "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
-      "name": "Lílian Rocha",
-      "birth": 173491200000,
+      "avatar_url": "https://images.unsplash.com/photo-1567996038657-706eea34b3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Eliana dos Santos",
+      "birth": -503971200000,
       "gender": "F",
       "services": "Yoga, Hidroginástica"
     },
     {
       "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
-      "name": "Eliana dos Santos",
-      "birth": -503971200000,
-      "gender": "F",
-      "services": "Yoga, Pilates"
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://source.unsplash.com/collection/3465564/1600x900",
-      "name": "Fabiana",
-      "birth": 952214400000,
-      "gender": "F",
-      "services": "Zumba, Forró"
+      "avatar_url": "https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "André Cristiano",
+      "birth": 175824000000,
+      "gender": "M",
+      "services": "Karatê, Yoga, Musculação"
     }
   ]
 }
